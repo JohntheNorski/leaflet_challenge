@@ -62,7 +62,6 @@ L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?acce
 
 var legend = L.control({position: 'bottomleft'});
 
-    // details for the legend
 legend.onAdd = function() {
 const div = L.DomUtil.create("div", "info legend");
 
@@ -76,7 +75,6 @@ const colors = [
     "purple"
 ];
 
-// Looping through
 for (let i = 0; i < grades.length; i++) {
     div.innerHTML +=
     "<i style='background: " + colors[i] + "'></i> " +
